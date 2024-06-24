@@ -1,0 +1,315 @@
+/*Gerais*/
+body{
+    font-size: 1.2em;
+}
+
+footer{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 0.9em;
+}
+/*index.php*/
+
+@keyframes cardoff {
+    0% {
+        right: -100vw;
+    }
+    100% {
+        right: 0vw;
+        opacity: 0.7;
+    }
+}
+@keyframes cardoff2 {
+    0% {
+        right: -100vw;
+    }
+    100% {
+        right: 0vw;
+        opacity: 0.7;
+    }
+}
+@keyframes cardoff3 {
+    from {
+        right: -100vw;
+    }
+    to {
+        right: 0vw;
+        opacity: 0.7;
+    }
+}
+
+.animacao-card {
+    animation: cardoff 0.5s 0s 1 forwards;
+}
+.animacao-card2 {
+    animation: cardoff2 1s 0s 1 forwards;
+}
+.animacao-card3 {
+    animation: cardoff3 1.5s 0s 1 forwards;
+}
+
+.card-tamanho {
+    width: 500px;
+    height: 80px;
+    border-radius: 50px 0 0 50px;
+}
+
+/*Efeito Parallax*/
+.caixa1 {
+    opacity: 0.7;
+    height: 100%;
+    background-repeat: no-repeat; /*Imagem não se repetir*/
+    background-size: cover; /*Ocupar todo o espaço da caixa*/
+    background-position: center; /*Centralizar a imagem*/
+    background-attachment: fixed; /*Para fixar a imagem no background 
+    assim deixando o conteúdo sobrepor*/
+
+}
+
+.caixa1 {
+    background-image: url(../img/imagemFundo.png);
+}
+
+.caixa2 {
+    background-image: url(../img/foto3.png);
+    opacity: 0.6;
+    background-repeat: no-repeat; /*Imagem não se repetir*/
+    background-size: cover; /*Ocupar todo o espaço da caixa*/
+    background-position: center; /*Centralizar a imagem*/
+    background-attachment: scroll; /*Para fixar a imagem no background */
+}
+
+
+@keyframes sumir-links {
+    from {
+        margin-top: -100vw;
+    }
+    to {
+        margin-top: 0;
+    }
+}
+
+#link1{
+    animation: sumir-links 0.5s 0s 1 forwards;
+}
+#link2{
+    animation: sumir-links 1s 0s 1 forwards;
+}
+#link3{
+    animation: sumir-links 1.5s 0s 1 forwards;
+}
+#link4{
+    animation: sumir-links 2s 0s 1 forwards;
+}
+#link5{
+    animation: sumir-links 2.5s 0s 1 forwards;
+}
+
+/*cards dos projetos*/
+.text h3{
+    font-size: 1.5em;
+}
+
+.text p{
+    font-size: 0.8em;
+    text-align: justify;
+}
+
+.text a{
+    font-size: 0.8em;
+}
+
+.btn-tecnologias{
+    border-radius: 60px !important;
+}
+
+.btn-tecnologias:hover{
+    background-color: white !important;
+    color: black !important;
+    border: 1px solid black !important;
+}
+
+.btn_acesso{
+    border-radius: 60px !important;
+}
+
+.btn_acesso:hover{
+    background-color: white !important;
+    color: black !important;
+    border: 1px solid black !important;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    height: 30px;
+    width: 30px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 50%;
+    border: 1px solid black;
+}
+
+.img-carousel{
+    height: 27vh;
+    width: 100vh;
+    border-radius: 15px;
+    object-fit: contain;
+}
+
+@keyframes sumir {
+    0% {
+        margin-left: -100vw;
+    }
+    50% {
+        margin-left: 4vw;
+    }
+    75%{
+        margin-left: 5vw;
+    }
+    100% {
+        margin-left: auto;
+    }
+}
+
+.caixa {
+    width: 100%;
+    height: 100%; /* Defina a altura conforme necessário */
+    animation: sumir 0.5s 0s 1 forwards;
+    overflow: hidden; /* Garantir que o conteúdo não transborde enquanto o elemento está animando */
+}
+
+
+
+.tecnologias_utilizadas{
+    display: inline;
+}
+
+h6 {
+    display: flex;
+    justify-content: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+/*página sobre*/
+@keyframes sumir-sobre {
+    from {
+        margin-top: -100vw;
+    }
+    to {
+        margin-top: 0;
+    }
+}
+
+.item1{
+    animation: sumir-sobre 0.5s 0s 1 forwards;
+}
+.item2{
+    animation: sumir-sobre 1s 0s 1 forwards;
+}
+.item3{
+    animation: sumir-sobre 1.5s 0s 1 forwards;
+}
+.item4{
+    animation: sumir-sobre 2s 0s 1 forwards;
+}
+
+.sobre{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.textos_sobre{
+    text-align: justify;
+}
+
+
+@media only screen and (max-width: 480px) {
+    .textos_sobre{
+        text-align: left;
+    }
+
+    .card-tamanho {
+        width: 80vw !important;
+        height: 50px !important;
+        border-radius: 50px 50px 50px 50px;
+        font-size: 0.7em;
+    }
+
+    /*cards row1*/
+    @keyframes cardoff {
+        from {
+            right: -100vw;  
+        }
+        to {
+            right: 0;
+            margin: 0 auto; 
+            opacity: 0.7;
+        }
+    }
+    @keyframes cardoff2 {
+        from {
+            right: -100vw;
+        }
+        to {
+            right: 0;
+            margin: 0 auto;
+            opacity: 0.7;
+        }
+    }
+    @keyframes cardoff3 {
+        from {
+            right: -100vw;
+        }
+        to {
+            right: 0;
+            margin: 0 auto;
+            opacity: 0.7;
+        }
+    }
+    
+    .animacao-card {
+        animation: cardoff 0.5s 0s 1 forwards;
+    }
+    .animacao-card2 {
+        animation: cardoff2 1s 0s 1 forwards;
+    }
+    .animacao-card3 {
+        animation: cardoff3 1.5s 0s 1 forwards;
+    } 
+}
+
+
+@media only screen and (min-width: 480px) and (max-width: 600px) {
+    .textos_sobre{
+        text-align: left;
+    }
+
+    .card-tamanho {
+        width: 300px !important;
+        height: 60px !important;
+        border-radius: 50px 0 0 50px;
+    }
+
+} 
+
+@media only screen and (min-width: 600px)  and (max-width: 992px) { 
+
+    .card-tamanho {
+        width: 300px !important;
+        height: 70px !important;
+        border-radius: 50px 0 0 50px;
+        font-size: 0.8em;
+    }
+
+} 
+
+@media only screen and (min-width: 992px)  and (max-width: 1382px) {
+
+    .card-tamanho {
+        width: 500px !important;
+        height: 80px !important;
+        border-radius: 50px 0 0 50px;
+        font-size: 1em;
+    }
+
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3/2), only screen and (min-device-pixel-ratio: 1.5) { }

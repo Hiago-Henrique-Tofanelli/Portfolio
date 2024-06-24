@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre</title> <!-- Using $tittle variable dynamically -->
+    <link rel="stylesheet" href="assets/libs/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/fontawesome/css/all.css">
+    <link rel="shortcut icon" href="assets/img/logoPreto.png" type="image/x-icon">
+</head>
+<body class="d-flex flex-column justify-content-between min-vh-100">
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark p-2">
+        <!-- navbar-expand é para definir a largura da navbar -->
+        <!-- navbar-dark para a cor dos elementos da navbar -->
+
+        <!-- Logo -->
+        <img src="assets/img/logoPreto.png" style="width: 40px; height: 40px;" class="rounded-circle me-3 m-1" alt="">
+        <a href="/indexhtml" class="navbar-brand">Portfólio</a>
+        <!-- navbar-brand é para o logo da página -->
+
+        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav-target" aria-expanded="false" aria-label="Toggle navigation">
+            <!-- data-target - o que vamos abrir -->
+            <!-- data-toggle - Ele indica ao Bootstrap qual funcionalidade deve ser ativada
+                 ou desativada quando o elemento é acionado -->
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navegação -->
+        <div class="collapse navbar-collapse" id="nav-target">
+            <!-- collapse - serve para esconder o menu -->
+            <!-- navbar-collapse - para formatar o menu para aparecer abaixo -->
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a href="/portfolio" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/portfolio/sobre" class="nav-link">Sobre</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/portfolio/projetos" class="nav-link">Projetos</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+<main class="container min-vh-100 p-4 sobre">
+    <div class="row">
+        <div class="col-12 text-center item1">
+            <h1>Olá, sou o Hiago <img src="assets//img/aceno.gif" style="width: 50px; height: 50px;" alt="Aceno.gif">!</h1>
+            <img src="" alt="">
+        </div>
+    </div>
+    <hr>
+    <div class="row text-center">
+        <div class="col-12 col-md-4 item2">
+            <h1>Sobre Mim</h1>
+            <hr>
+            <article class="textos_sobre">
+                Sou um programador iniciante buscando me desenvoler com cursos e certificações.
+                <p>
+                    Neste caminho universitário conheci diversas técnologias que me fizeram ter noção
+                    sobre várias áreas da TI.
+                </p>
+            </article>
+        </div>
+
+        <div class="col-12 col-md-4 item3">
+            <h1>Curso Superior</h1>
+            <hr>
+            <article class="textos_sobre">
+                Estou no último ano do curso de Sistemas da informação - IFSP Campus Votuporanga-SP,
+                 o término está programado para o final do ano de 2024
+            </article>
+        </div>
+
+        <div class="col-12 col-md-4 item4">
+            <h1>Técnologias</h1>
+            <hr>
+            <div class="list-group">
+                <a class="list-group-item list-group-item-action">
+                    JavaScript
+                </a>
+                <a class="list-group-item list-group-item-action">
+                    PHP
+                </a>
+                <a class="list-group-item list-group-item-action">
+                    Node
+                </a>
+                <a class="list-group-item list-group-item-action " aria-disabled="true">
+                    MySQL
+                </a>
+                <a class="list-group-item list-group-item-action " aria-disabled="true">
+                    Docker
+                </a>
+            </div>
+        </div>
+    </div>
+</main>
+
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-12">
+            <footer class="text-center">&copy; Hiago Henrique Tofanelli</footer>
+        </div>
+    </div>
+</div>
+    <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+    
+</body>
+</html>

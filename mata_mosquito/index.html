@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Game Over</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+
+        <link rel="stylesheet" href="css/style.css">
+
+        <script>
+
+            function iniciarJogo(){
+                var nivel = document.getElementById('nivel').value
+
+                if(nivel === ''){
+                    alert('Selecione um nível para iniciar o jogo')
+                    return false
+                }
+                window.location.href = 'app.html?' + nivel
+            }
+
+        </script>
+    </head>
+    <body>
+        
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="d-flex justify-content-center">
+                        <img src="imagens/game.png" alt="Imagem Inicial do jogo">
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="d-flex justify-content-center">
+                  <select class="form-control-lg mb-2" id="nivel">
+                    <option value="">-- Selecione o nível --</option>
+                    <option value="normal">Normal</option>
+                    <option value="dificil">Difícil</option>
+                    <option value="chucknorris">Chuck Norris</option>
+                  </select>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <div class="d-flex justify-content-center">
+                        <button type="button" class="btn btn-danger btn-lg" onclick="iniciarJogo()">Iniciar Partida</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>
